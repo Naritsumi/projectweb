@@ -1,0 +1,20 @@
+*
+{
+	margin:0;
+	padding:0;
+}	
+body
+{
+	font-family: Helvetica;
+	
+}
+
+		
+	.navbar {
+	background-color: #8DCBCD;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+	}
