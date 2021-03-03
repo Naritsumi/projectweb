@@ -34,8 +34,16 @@
 		text-align: center;
 	}
 	
-	h2 {
+	h3 {
 		text-align: center;
+		font-weight:bold
+	}
+	
+	.center {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 50%;
 	}
 	
 	* {
@@ -88,7 +96,19 @@
 		  max-width: 100%; /* not to stand out from div */
 		  max-height: 100%; /* not to stand out from div */
 		  margin: auto auto 0; /* position to bottom and center */
-}
+		}
+
+	 #services{
+	 		padding:80px 0;
+	 }
+	
+	.service-img{
+			width: 100px;
+			margin-top: 20px;
+	}
+	
+	
+	
 	 }
 	 
 
@@ -127,11 +147,33 @@
   <p class="p1">CTI Canarias</p>
 </div>
 
-	<p class="p2">SOBRE NOSOTROS</p>
-	<h2>Somos expertos en Desarrollo (Gestión Comercial, Gestión Contable, ...).</h2><br>
-	<h2>Ofrecemos servicios informáticos integrales tanto a empresas como a particulares.</h2>
-	
+<!-- ------------Sobre nosotros -------------- -->
 
+<section id="nosotros">
+<p class="p2">SOBRE NOSOTROS</p>
+
+<div class="container">
+<div class="row">
+	<div class="col-md-4 services">
+	<p style="text-align:center;"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Settings_app_icon.png" class="service-img"></p>
+	<h4><span class="glyphicon glyphicon-ok">Somos expertos en Desarrollo (Gestión Comercial, Gestión Contable, ...).</span></h4>
+	</div>
+	
+	<div class="col-md-4 services">
+	<p style="text-align:center;"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Settings_app_icon.png" class="service-img"></p>
+	<h4><span class="glyphicon glyphicon-ok">Servicios informáticos integrales tanto a empresas como a particulares.</span></h4>
+	</div>
+	
+	<div class="col-md-4 services">
+	<p style="text-align:center;"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Settings_app_icon.png" class="service-img"></p>
+	<h4><span style="font-family:verdana" class="glyphicon glyphicon-ok">Nos adaptamos a tus necesidades o las de tu negocio</span></h4>
+	</div>
+	</div>
+	</div>
+	
+</section>
+
+	<p class="p2">¿QUÉ HACEMOS?</p>
 	
 
 </body>
