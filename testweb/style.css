@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+
+/*--general styles--*/
+html, body {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #d8eaeb ,#c2d8db);
+  }
+
+  .wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+  }
+
+/*---navbar navegación---*/
+#navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index:10;
+}
+
+.navbar{
+    background-image: linear-gradient(to right, #b3caca,#88b3ba);
+    padding:0 !important;
+}
+
+.navbar-brand img{
+    height: 40px;
+    padding-left: 20px;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a{
+    color: #fff !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+
+.fa-bars{
+    color: #fff;
+    font-size: 30px !important;
+}
+
+.navbar-toggler{
+    outline: none !important
+}
+
+/*--- Hero - banner inicial---*/
+
+#hero {
+    width: 100%;
+    height: calc(100vh - 110px);
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+  }
+  
+  #hero .carousel-item {
+    width: 100%;
+    height: calc(100vh - 110px);
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  
+  /*--Editar apariencia carrusel--*/
+  #hero .carousel-item::before {
+    content: '';
+    background-color: rgba(78, 110, 138, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  
+  /*--Recuadro carrusel---*/
+  #hero .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+  }
+  
+  #hero .carousel-content {
+    text-align: left;
+  }
+  
+  @media (max-width: 992px) {
+    #hero, #hero .carousel-item {
+      height: calc(100vh - 70px);
+    }
+    #hero .carousel-content.container {
+      padding: 0 50px;
+    }
+  }
+  
+  #hero h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: 900;
+  }
+  
+  #hero p {
+    width: 80%;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    color: #fff;
+  }
+  
+  #hero .carousel-inner .carousel-item {
+    transition-property: opacity;
+    background-position: center top;
+  }
+  
+  #hero .carousel-inner .carousel-item,
+  #hero .carousel-inner .active.carousel-item-start,
+  #hero .carousel-inner .active.carousel-item-end {
+    opacity: 0;
+  }
+  
+  #hero .carousel-inner .active,
+  #hero .carousel-inner .carousel-item-next.carousel-item-start,
+  #hero .carousel-inner .carousel-item-prev.carousel-item-end {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
+  #hero .carousel-inner .carousel-item-next,
+  #hero .carousel-inner .carousel-item-prev,
+  #hero .carousel-inner .active.carousel-item-start,
+  #hero .carousel-inner .active.carousel-item-end {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  #hero .carousel-control-prev, #hero .carousel-control-next {
+    width: 10%;
+  }
+  
+  #hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
+    background: none;
+    font-size: 50px;
+    line-height: 1;
+    width: auto;
+    height: auto;
+  }
+  
+  #hero .carousel-indicators li {
+    cursor: pointer;
+  }
+  
+  #hero .btn-start {
+    text-decoration:none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 5px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: #fff;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    border: 0;
+    background: #428bca;
+  }
+  
+  #hero .btn-start:hover {
+    background: #1c5c93;
+  }
+  
+  @media (max-width: 768px) {
+    #hero h2 {
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-height: 500px) {
+    #hero, #hero .carousel-item {
+      height: 120vh;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    #hero p {
+      width: 60%;
+    }
+    #hero .carousel-control-prev, #hero .carousel-control-next {
+      width: 5%;
+    }
+  }
+  
+
+ /*--------Video----------*/
+
+
+#vid{
+    height: 100vh;
+    width: 100%;
+    /*background: rgb(141, 177, 177);*/
+}
+
+#vid::after{
+    width: 100%;
+    height: 55%;
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:0;
+     /*background: rgba(0, 0, 0, 0.5);*/
+}
+
+#vid video{
+    width: 100%;
+    height: 55%;
+    position: relative;
+    top:0;
+    left:0;
+    z-index:0;
+    object-fit:cover;
+}
+
+/*-------Information-------*/
+
+#information {
+    background: url("/images/background.jpg") no-repeat center center fixed;
+    display: table;
+    height: 400px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #information .panel {
+    opacity: 0.85;
+  }
+
+
+  /*---------Botones--------*/
+
+  .botones {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
