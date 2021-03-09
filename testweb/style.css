@@ -4,7 +4,7 @@
 html, body {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to right, #d8eaeb ,#c2d8db);
+    background-image: linear-gradient(to right, #ffffff,#ffffff);
   }
 
   .wrapper {
@@ -23,12 +23,12 @@ html, body {
 }
 
 .navbar{
-    background-image: linear-gradient(to right, #b3caca,#88b3ba);
+    background-image: linear-gradient(to right, #ffffff,#ffffff);
     padding:0 !important;
 }
 
 .navbar-brand img{
-    height: 40px;
+    height: 60px;
     padding-left: 20px;
 }
 
@@ -37,7 +37,7 @@ html, body {
 }
 
 .navbar-nav li a{
-    color: #fff !important;
+    color: rgb(0, 0, 0) !important;
     font-weight: 600;
     float: right;
     text-align: left;
@@ -61,6 +61,7 @@ html, body {
     overflow: hidden;
     background: #000;
   }
+
   
   #hero .carousel-item {
     width: 100%;
@@ -74,7 +75,6 @@ html, body {
   /*--Editar apariencia carrusel--*/
   #hero .carousel-item::before {
     content: '';
-    background-color: rgba(78, 110, 138, 0.5);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -85,21 +85,35 @@ html, body {
     overflow: hidden;
   }
   
-  /*--Recuadro carrusel---*/
+  /*--Recuadro (container) carrusel---*/
   #hero .carousel-container {
+
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 0;
+    bottom: 0;  
     top: 0;
     left: 0;
     right: 0;
     overflow: hidden;
+    margin: 0px 0px 0px 0px;
+    
   }
   
+  /*#hero .container:before {
+
+  }*/
+
   #hero .carousel-content {
     text-align: left;
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 5px;
+    border-bottom: 5px;
+    border-color: #fff;
+    border-style: solid;
+
   }
   
   @media (max-width: 992px) {
@@ -108,26 +122,51 @@ html, body {
     }
     #hero .carousel-content.container {
       padding: 0 50px;
+      
     }
   }
   
   #hero h2 {
     color: #fff;
+    margin-top: 20px;
     margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 0%;
     font-size: 48px;
     font-weight: 900;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
   
   #hero p {
+    font-family: Arial, sans-serif;
     width: 80%;
+    margin-left: 25px;
+    margin-right: 60%;
     -webkit-animation-delay: 0.4s;
     animation-delay: 0.4s;
-    color: #fff;
+    color:#fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
   
-  #hero .carousel-inner .carousel-item {
+  #hero .carousel-inner {
     transition-property: opacity;
     background-position: center top;
+    border-top: 00px;
+    border-left: 00px;
+    border-right: 00px;
+    border-bottom: 5px;
+    border-style: solid;
+  }
+  
+  #hero .carousel-item {
+    transition-property: opacity;
+    background-position: center top;
+    border-top: 00px;
+    border-left: 00px;
+    border-right: 00px;
+    border-bottom: 5px;
+    border-color: rgb(52, 115, 139);
+    border-style: solid;
   }
   
   #hero .carousel-inner .carousel-item,
@@ -173,20 +212,25 @@ html, body {
     font-size: 14px;
     letter-spacing: 1px;
     display: inline-block;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
     padding: 12px 32px;
     border-radius: 5px;
     transition: 0.5s;
     line-height: 1;
-    margin: 10px;
     color: #fff;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
     border: 0;
     background: #428bca;
+    
   }
   
   #hero .btn-start:hover {
     background: #1c5c93;
+    margin-left: 50px;
+   
   }
   
   @media (max-width: 768px) {
@@ -210,9 +254,35 @@ html, body {
     }
   }
   
+/*-------Information-------*/
 
- /*--------Video----------*/
+#information {
+  background: url("/testweb/images/backgroundgris.png") no-repeat center center fixed;
+  display: table;
+  height: 500px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
+/*-------/Information-------*/
+
+/*---------Botones--------*/
+
+  .botones {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10%;
+    width: 50%;
+  }
+
+/*---------/Botones--------*/
+
+/*--------Video----------*/
 
 #vid{
     height: 100vh;
@@ -241,30 +311,37 @@ html, body {
     object-fit:cover;
 }
 
-/*-------Information-------*/
 
-#information {
-    background: url("/images/background.jpg") no-repeat center center fixed;
-    display: table;
-    height: 400px;
-    position: relative;
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+  /*--Contacto--*/
+.contact .info-box {
+  color: #444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+  margin-bottom: 30px;
+  width: 100%;
+}
 
-  #information .panel {
-    opacity: 0.85;
-  }
+.contact .info-box i {
+  font-size: 32px;
+  color: #428bca;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #9eccf4;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #666;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
 
 
-  /*---------Botones--------*/
-
-  .botones {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
