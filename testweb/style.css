@@ -101,9 +101,18 @@ html, body {
     
   }
   
-  /*#hero .container:before {
-
-  }*/
+  .blur{
+    width: 580px;
+    height: 280px;
+    background-color: rgba(214, 215, 216, 0.027);
+    backdrop-filter: blur(5px);
+    color: rgb(201, 201, 201);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 8px 0px 16px;
+  }
 
   #hero .carousel-content {
     text-align: left;
