@@ -5,6 +5,8 @@ html, body {
     height: 100%;
     width: 100%;
     background-image: linear-gradient(to right, #ffffff,#ffffff);
+
+
   }
 
   .wrapper {
@@ -14,7 +16,14 @@ html, body {
     perspective: 2px;
   }
 
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+  }
 /*---navbar navegación---*/
+
 #navbar {
     position: fixed;
     top: 0px;
@@ -36,6 +45,7 @@ html, body {
     padding: 0 10px;
 }
 
+
 .navbar-nav li a{
     color: rgb(0, 0, 0) !important;
     font-weight: 600;
@@ -50,6 +60,10 @@ html, body {
 
 .navbar-toggler{
     outline: none !important
+}
+
+.navbar-text{
+  margin-left: auto;
 }
 
 /*--- Hero - banner inicial---*/
@@ -102,8 +116,8 @@ html, body {
   }
   
   .blur{
-    width: 580px;
-    height: 280px;
+    width: 680px;
+    height: 180px;
     background-color: rgba(214, 215, 216, 0.027);
     backdrop-filter: blur(5px);
     color: rgb(201, 201, 201);
@@ -113,6 +127,46 @@ html, body {
     border-radius: 25px;
     box-shadow: 8px 0px 16px;
   }
+
+  .blor{
+    width: 680px;
+    height: 180px;
+    background-color: rgba(214, 215, 216, 0.027);
+    backdrop-filter: blur(5px);
+    color: rgb(201, 201, 201);
+    margin-top: 40vh;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*center*/
+    box-shadow: 8px 0px 16px;
+  }
+
+  .bler{
+    width: 680px;
+    height: 180px;
+    /*background-color: rgba(214, 215, 216, 0.027);*/
+    /*backdrop-filter: blur(5px);*/
+    /*color: rgb(201, 201, 201);*/
+    margin-top: 40vh;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    /*border-radius: 25px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*center*/
+    /*box-shadow: 8px 0px 16px;*/
+  }
+
 
   #hero .carousel-content {
     text-align: left;
@@ -136,12 +190,14 @@ html, body {
   }
   
   #hero h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
     color: #fff;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    margin-right: 0%;
-    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 45px;
     font-weight: 900;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
@@ -221,9 +277,7 @@ html, body {
     font-size: 14px;
     letter-spacing: 1px;
     display: inline-block;
-    margin-top: 10px;
-    margin-left: 30px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     padding: 12px 32px;
     border-radius: 5px;
     transition: 0.5s;
@@ -233,12 +287,17 @@ html, body {
     animation-delay: 0.8s;
     border: 0;
     background: #428bca;
+
+    margin-top: 5%;
+    margin-left: 35%;
+    position: absolute;
+
+
     
   }
   
   #hero .btn-start:hover {
     background: #1c5c93;
-    margin-left: 50px;
    
   }
   
@@ -268,7 +327,7 @@ html, body {
 #information {
   background: url("/testweb/images/backgroundgris.png") no-repeat center center fixed;
   display: table;
-  height: 500px;
+  height: 600px;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -276,6 +335,64 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+  margin-top:10vh;
+}
+
+.container .card{
+  position: relative;
+  width: 280px;
+  height:400px;
+  margin:30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255,255,255,0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-left: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(5px);
+
+}
+
+.container .card .content{
+  padding: 20px;
+  text-align:center;
+  transition: 0.5s;
+
+}
+
+.container .card .content h2{
+  position: absolute;  
+  top: -30px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(255,255,255,0.5);
+  pointer-events:none;
+}
+
+.container .card .content h3{
+  font-size: 1.8em;
+  color:#fff;
+  z-index: 1;
+}
+
+.container .card .content p{
+  font-size: 1em;
+  color:#fff;
+  font-weight: 300;
+}
+
 
 /*-------/Information-------*/
 
