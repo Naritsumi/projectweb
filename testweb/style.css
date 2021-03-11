@@ -520,6 +520,7 @@ html, body {
   height: 0;
   overflow: hidden;
   }
+
   .google-maps iframe {
   position: absolute;
   top: 0;
@@ -528,3 +529,6 @@ html, body {
   height: 100% !important;
   }
 
+/*---Cookies---*/
+
+/*---/Cookies---*/
