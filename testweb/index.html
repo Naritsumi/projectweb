@@ -7,6 +7,10 @@
 <meta name="CTI Canarias" content="width=device-width, initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" 
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" 
+      crossorigin="anonymous">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -19,6 +23,7 @@
 
 </head>
 <body>
+  <!--Navegador superior-->
     <section id=navbar>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
@@ -56,6 +61,7 @@
             </div>
           </nav>
     </section>
+<!--/Navegador superior-->
 
       <!--Carrusel-->
   <section id="hero">
@@ -77,7 +83,7 @@
           <div class="carousel-item" style="background-image: url('/testweb/images/slide/slide-3.jpg');">
             <div class="carousel-container">
               <div class="bler">
-                <h2 class="animate__animated animate__fadeInDown">Aplicaciones estándar y módulos a medida</h2>
+                <h2 class="animate__animated animate__fadeInDown">Instalación de redes y hardware</h2>
                 <a href="#information" class="btn-start animate__animated animate__fadeInUp scrollto">Sobre nosotros</a>
               </div>
              
@@ -85,11 +91,11 @@
           </div>
 
           <!-- Slide 3 -->
-          <div class="carousel-item" style="background-image: url('/testweb/images/slide/slide-3.jpg');">
+          <div class="carousel-item" style="background-image: url('/testweb/images/slide/slide-1.jpg');">
             <div class="carousel-container">
-              <div class="blor">
-                <h2 class="animate__animated animate__fadeInDown">Aplicaciones estándar y módulos a medida</h2>
-                <a href="#information" class="btn-start animate__animated animate__fadeInUp scrollto">Sobre nosotros</a>
+              <div class="bler">
+                <h2 class="animate__animated animate__fadeInDown">Asistencia telefónica y presencial</h2>
+                <a href="#information" class="btn-start animate__animated animate__fadeInUp scrollto">Contáctanos</a>
             </div>
           </div>
           </div>
@@ -109,7 +115,7 @@
   <!-- End carrusel-->
 
   <div class="arrow-btn">
-    <a href="#"><span class="bi bi-arrow-up-circle-fill"></span></a>
+    <a href="#"><span class="bi bi-arrow-up-circle" style="color:#2c8087"></span></a>
 
   </div>
 
@@ -159,42 +165,66 @@
                     colors="primary:#ffffff,secondary:#08a88a"
                     style="width:128px;height:128px">
                 </lord-icon>
-              <h3>Android Auto/Pre-venta</h3>
+              <h3>Auto/Pre-venta</h3>
               <p>Lorem ipsum dolor, sit amet consectetur.</p>
 
             </div>
           </div>
 
         </div>
+
       </div>
       <!-- /información -->
 
 
     <!----Circle menu---->
-    <div id="botones" class="botones">
-      <div class="container">
-        <div class="row">
-      <img src="/testweb/images/empresa/idea.png">
-    </div>
-    </div>
-  </div>
-
+   
+    <section class="wrapper">
+      <div class="inner">
+        <ul id="menu">
+          <a class="menu-button icon-plus" href="#menu" title="Show navigation"><span class="fas fa-share-alt"></span></a>
+          <a class="menu-button icon-minus" href="#menu" title="Hide navigation"><span class="fas fa-share-alt"></span></a>
+          <li class="menu-item">
+              <a href="#menu">
+                  <span class="fab fa-github"></span>
+              </a>
+          </li>
+          <li class="menu-item">
+              <a href="#menu">
+                  <span class="fab fa-facebook"></span>
+              </a>
+          </li>
+          <li class="menu-item">
+              <a href="#menu">
+                  <span class="fab fa-twitter"></span>
+              </a>
+          </li>
+          <li class="menu-item">
+              <a href="#menu">
+                  <span class="fab fa-instagram"></span>
+              </a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </section>
     <!----/Circle menu---->
 
 
     <!-- Vídeo -->
-  
-    <div id="vid">
-      <video
-      loop 
-      muted
-      autoplay
-      preload="auto">
-        <source src="/testweb/images/video/office.mp4" type="video/mp4">
-          Does not support video tag.
-      </video>
+
+        <div id="vid">
+          <video
+          loop 
+          muted
+          autoplay
+          preload="auto">
+            <source src="/testweb/images/video/office.mp4" type="video/mp4">
+              Does not support video tag.
+          </video>
 
     <!-- /Vídeo -->
+    
 
     <!--Contactar-->
 
@@ -211,7 +241,7 @@
             <div class="info-box">
               <i class="bx bx-map"></i>
               <h3>Dirección</h3>
-              <p>Blabla bla</p>
+              <p>C/ El Salvador - El Toscal<br>Edif. Nueva Orleans - Local 3</br>38417 Los Realejos</p>
             </div>
           </div>
 
@@ -219,7 +249,7 @@
             <div class="info-box">
               <i class="bx bx-envelope"></i>
               <h3>Nuestro email</h3>
-              <p>cti@.com<br>@example</p>
+              <p>info@cticanarias.com<br></p>
             </div>
           </div>
 
@@ -227,11 +257,13 @@
             <div class="info-box ">
               <i class="bx bx-phone-call"></i>
               <h3>Número Teléfono</h3>
-              <p>0935840958<br>903458340589</p>
+              <p>+922 36 50 02</p>
             </div>
           </div>
 
-          
+          <div class="google-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14038.965074698013!2d-16.5761309!3d28.3968816!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x61265773f737e3ca!2sC.T.I.%20Canarias!5e0!3m2!1ses!2ses!4v1615472452145!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
 
       </div>
@@ -239,6 +271,22 @@
 
     <!--/Contactar-->
 
+    <!--Info empresa-->
+    <footer id="footer">
+      <div class="inner">
+        <div class="content">
+          <section>
+            
+          </section>
+        </div>
+        <div class="copyright">
+          &copy;
+        </div>
+      </div>
+    </footer>
+
+    
+    <!--/Info empresa-->
 
     <!--Librerías Query-->
     <script scr="/js/app.js"></script>

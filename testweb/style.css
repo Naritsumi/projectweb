@@ -79,7 +79,7 @@ html, body {
 
 }
 
- /*Tamaño botón*/
+ /*Tamaño botón navegador*/
 .arrow-btn a{
   font-size: 40px;
 
@@ -151,23 +151,6 @@ html, body {
     box-shadow: 8px 0px 16px;
   }
 
-  .blor{
-    width: 680px;
-    height: 180px;
-    background-color: rgba(214, 215, 216, 0.027);
-    backdrop-filter: blur(5px);
-    color: rgb(201, 201, 201);
-    margin-top: 40vh;
-    /*display: flex;*/
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /*center*/
-    box-shadow: 8px 0px 16px;
-  }
 
   .bler{
     width: 680px;
@@ -309,7 +292,7 @@ html, body {
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
     border: 0;
-    background: #428bca;
+    background: #3b8c94;
 
     margin-top: 5%;
     margin-left: 35%;
@@ -320,7 +303,7 @@ html, body {
   }
   
   #hero .btn-start:hover {
-    background: #1c5c93;
+    background: #7ab4b8;
    
   }
   
@@ -357,6 +340,12 @@ html, body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 5px;
+    border-color: rgb(52, 115, 139);
+    border-style: solid;
 }
 
 .container{
@@ -419,17 +408,43 @@ html, body {
 
 /*-------/Information-------*/
 
-/*---------Botones--------*/
+/*---------Menu--------*/
 
-  .botones {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:10%;
-    width: 50%;
-  }
+#menu {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -75px 0 0 -75px;
+  list-style: none;
+  font-size: 200%;
+}
 
-/*---------/Botones--------*/
+.menu-button {
+  opacity: 0;
+  z-index: -1;
+}
+
+.menu-button {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  background: #424242;
+  background-size: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  line-height: 150px;
+  color: #fff;
+}
+
+
+
+/*---------/Menu--------*/
 
 /*--------Video----------*/
 
@@ -460,6 +475,12 @@ html, body {
     object-fit:cover;
 }
 
+
+  /*--Menu--*/
+
+ 
+ 
+  /*--/Menu--*/
 
   /*--Contacto--*/
 .contact .info-box {
@@ -493,4 +514,17 @@ html, body {
   margin-bottom: 0;
 }
 
+.google-maps {
+  position: relative;
+  padding-bottom: 40%; 
+  height: 0;
+  overflow: hidden;
+  }
+  .google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  }
 
