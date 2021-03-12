@@ -331,7 +331,7 @@ html, body {
 /*-------Information-------*/
 
 #information {
-  background: url("/testweb/images/backgroundgris.png") no-repeat center center fixed;
+  background: url('images/backgroundgris.png') no-repeat center center fixed;
   display: table;
   height: 600px;
   position: relative;
