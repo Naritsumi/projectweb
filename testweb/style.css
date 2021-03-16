@@ -1,6 +1,41 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500");
 
+/*---Preloader ---*/
+  .loader-page {
+    position: fixed;
+    z-index: 25000;
+    background: rgb(255, 255, 255);
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all .3s ease;
+  }
+  .loader-page::before {
+    content: "";
+    position: absolute;
+    border: 2px solid rgb(50, 150, 176);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-left: 2px solid rgba(50, 150, 176,0);
+    border-top: 2px solid rgba(50, 150, 176,0);
+    animation: rotarload 1s linear infinite;
+    transform: rotate(0deg);
+  }
+  @keyframes rotarload {
+      0%   {transform: rotate(0deg)}
+      100% {transform: rotate(360deg)}
+  }
+ 
+
+
 /*--general styles--*/
+
 html, body {
     height: 100%;
     width: 100%;
@@ -86,7 +121,7 @@ html, body {
 /*----/Nav Navegator----*/
 
 
-/*--- Hero - banner inicial---*/
+/*--- Hero - carrusel inicial---*/
 
 #hero {
     width: 100%;
@@ -402,17 +437,16 @@ html, body {
 
 /*-------/Information-------*/
 
-/*---------Menu--------*/
+/*--Menu--*/
+
 
 
 
  
 /*--/Menu--*/
 
+
   /*--Contacto--*/
-
-
-  
   #contacto {
     /*imagen con comillas simples para poder correrlo en servidor*/
     background: url('images/backgroundgris.png') no-repeat center center fixed;
@@ -467,65 +501,4 @@ html, body {
     margin-bottom: 0;
   }
   
-  .contact .formulario {
-    background: rgb(255, 255, 255);
-    margin-top: 2vh;
-    margin-bottom: 1vh;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(214, 215, 216, 0.5);
-    padding: 30px;
-  }
-  
-  
-  .contact .formulario input {
-    padding: 10px 15px;
-  }
-  
-  .contact .formulario textarea {
-    padding: 12px 15px;
-  }
-  
-  .contact .btn-info{
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 1px;
-
-    /*Ajustes visuales botón*/
-    padding: 12px 32px;
-    border-radius: 5px;
-    transition: 0.5s;
-    line-height: 1;
-    color: #fff;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
-    border: 0; 
-    background: #3b8c94;
-    align-items: center;
-    margin-top: 5%;
-    
-  }
-
-  .contact .btn-info:hover {
-    background: #7ab4b8;
-   
-  }
-  
-  
-  @-webkit-keyframes animate-loading {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes animate-loading {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
 
