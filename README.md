@@ -7,3 +7,4 @@ Testweb - página y diseño actual.
 - [x] Actualizar Footer
 - [ ] Generar menú responsive
 - [ ] Re-estructurar formato
+- [ ] Certificado SSL
