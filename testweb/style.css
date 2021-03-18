@@ -100,7 +100,7 @@ html, body {
   position: fixed;
   bottom:30px;
   right:30px;
-  z-index: 1;
+  z-index: 20;
 
 }
 
@@ -357,7 +357,7 @@ html, body {
     }
   }
   
-/*-------Information-------*/
+/*-------Information parallax-------*/
 
 #information {
   /*imagen con comillas simples para poder correrlo en servidor*/
@@ -377,6 +377,7 @@ html, body {
     border-color: rgb(52, 115, 139);
     border-style: solid;
 }
+
 
 .pad-section .container{
   position: relative;
@@ -441,6 +442,7 @@ html, body {
 /*--Menu---*/
 
 .mini {
+  
   min-height: 215px;
   overflow: hidden;
   position: relative;
@@ -463,31 +465,22 @@ html, body {
   left: -20%;
 }
 
-.mini-logo {
-  max-width:20%;
-  max-height:20%;
-  margin-bottom: 2vh;
-}
+
+
 .mini .mini-content {
   position: relative;
-  text-align: center;
+  margin-top:9%; /*margen entre menú y cards*/
+  margin-bottom: 5%;
   z-index: 3;
 
 }
 
 
 .mini .mini-content .info {
+
   text-align: center;
-  color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.mini .mini-content .info small {
-  display: block;
-  font-weight: 400;
-  font-size: 13px;
-  margin-bottom: 5px;
 }
 
 .mini .mini-content .info strong {
@@ -497,22 +490,14 @@ html, body {
   display: block;
 }
 
-.mini .mini-content .info h1 {
-  color: #fff;
-  font-weight: 500;
-  font-size: 28px;
-  letter-spacing: 0.25px;
-  margin-bottom: 30px;
-}
-
-
 .mini .mini-content .mini-box {
+  
   text-decoration: none;
   display: block;
-  background: #fff;
-  padding: 20px;
-  border-radius: 50px;
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  background:rgb(116, 179, 221);
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 10px 48px 0 rgba(0, 0, 0, 0.08);
   margin-bottom: 30px;
   position: relative;
   -webkit-transition: all 0.3s ease 0s;
@@ -523,12 +508,12 @@ html, body {
 }
 
 .mini .mini-content .mini-box:hover {
-  text-decoration: none;
+  background: rgb(171, 173, 173);
   margin-top: -10px;
 }
 
 .mini .mini-content .mini-box:before {
-  text-decoration: none;
+  
   content: '';
   position: absolute;
   z-index: -1;
@@ -543,26 +528,24 @@ html, body {
   border-radius: 50px;
 }
 
-.mini .mini-content .mini-box i {
-  
-  display: block;
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
 .mini .mini-content .mini-box strong {
   
   display: block;
   font-weight: 400;
-  font-size: 17px;
-  color: #000000;
+  font-size: 22px;
+  color: #ffffff;
   letter-spacing: 0.25px;
   margin-bottom: 5px;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 /*--/Menu--*/
 
+/*--Menu modal--*/
+
+
+
+/*--Menu Modal--*/
 
   /*--Contacto--*/
   #contacto {
@@ -581,10 +564,12 @@ html, body {
     border-right: 0;
     border-top: 0;
     border-bottom: 0;
+    
 
   }
 
   .contact .info-box {
+    
     margin-top: 2vh;
     margin-bottom: 1vh;
     border-radius: 10px;
@@ -606,6 +591,7 @@ html, body {
   }
   
   .contact .info-box h3 {
+    
     font-size: 20px;
     color: #777777;
     font-weight: 700;
@@ -613,10 +599,12 @@ html, body {
   }
   
   .contact .info-box p {
+    
     padding: 0;
     line-height: 24px;
     font-size: 14px;
     margin-bottom: 0;
+    
   }
   
 
