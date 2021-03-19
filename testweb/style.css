@@ -388,6 +388,7 @@ html, body {
   flex-wrap: wrap;
   z-index: 1;
   margin-top:10vh;
+  
 }
 
 .pad-section .container .card{
@@ -451,6 +452,7 @@ html, body {
 }
 
 .mini:before {
+  display: block;
   content: '';
   position: absolute;
   width: 140%;
@@ -459,7 +461,7 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url(/images/bgprueba.jpg);
+  background-image: url(/images/vector.jpg);
   z-index: 2;
   top: -20%;
   left: -20%;
@@ -469,47 +471,35 @@ html, body {
 
 .mini .mini-content {
   position: relative;
-  margin-top:9%; /*margen entre menú y cards*/
-  margin-bottom: 5%;
+  margin-top:3%; /*margen entre menú y cards*/
+  margin-bottom: 2%;
   z-index: 3;
 
-}
-
-
-.mini .mini-content .info {
-
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.mini .mini-content .info strong {
-  font-weight: 700;
-  font-size: 17px;
-  margin-bottom: 40px;
-  display: block;
 }
 
 .mini .mini-content .mini-box {
   
   text-decoration: none;
   display: block;
-  background:rgb(116, 179, 221);
-  padding: 30px;
-  border-radius: 30px;
-  box-shadow: 0 10px 48px 0 rgba(0, 0, 0, 0.08);
+  background:rgb(52, 115, 139);
+  padding: 40px;
   margin-bottom: 30px;
   position: relative;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
   text-align: center;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 35px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-left: 1px solid rgba(255,255,255,0.1);
 }
 
+
 .mini .mini-content .mini-box:hover {
-  background: rgb(171, 173, 173);
-  margin-top: -10px;
+  background:  rgb(50, 150, 176);
+  
 }
 
 .mini .mini-content .mini-box:before {
@@ -538,6 +528,31 @@ html, body {
   margin-bottom: 5px;
   margin-top: 5px;
 }
+
+
+.mini .mini-content .mini-box small {
+  display: block;
+  font-weight: 450;
+  font-size: 23px;
+  color: #ffffff;
+  letter-spacing: 0.25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.mini .mini-content .info{
+  margin-top: 0px;
+  margin-bottom: 5vh;
+  align-items: center;
+  text-align: center;
+}
+
+hr.style3 {
+	border-top: 1px dashed #8c8b8b;
+  width:100px; 
+  margin: auto;
+}
+
 
 /*--/Menu--*/
 
@@ -643,7 +658,7 @@ transition: opacity 400ms ease-in;
   
   .contact .info-box h3 {
     
-    font-size: 20px;
+    font-size: 23px;
     color: #777777;
     font-weight: 700;
     margin: 10px 0;
@@ -653,7 +668,7 @@ transition: opacity 400ms ease-in;
     
     padding: 0;
     line-height: 24px;
-    font-size: 14px;
+    font-size: 17px; 
     margin-bottom: 0;
     
   }

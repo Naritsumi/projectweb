@@ -50,13 +50,13 @@
                   <a class="nav-link" href="#hero">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#botones">Proyectos</a>
+                  <a class="nav-link" href="#menu">Productos</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#contacto">Localización</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#contacto">Contáctanos</a>
+                  <a class="nav-link" href="#contacto">Sobre nosotros</a>
                 </li>
               
               </ul>
@@ -84,7 +84,7 @@
             <div class="carousel-container text-center">
               <div class="bler">
                 <h2 class="animate__animated animate__fadeInDown">Aplicaciones estándar y módulos a medida</h2>
-                <a href="#information" class="btn btn-primary animate__animated animate__fadeInUp scrollto">Sobre nosotros</a>
+                <a href="#information" class="btn btn-primary animate__animated animate__fadeInUp scrollto">Productos</a>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@
             <div class="carousel-container text-center">
               <div class="bler">
                 <h2 class="animate__animated animate__fadeInDown">Instalación de redes y hardware</h2>
-                <a href="#information" class="btn btn-primary animate__animated animate__fadeInUp scrollto">Sobre nosotros</a>
+                <a href="#information" class="btn btn-primary animate__animated animate__fadeInUp scrollto">Productos</a>
               </div>
              
             </div>
@@ -183,60 +183,69 @@
     <!----Circle menu---->
    
     <section class="mini" id="menu">
-      <div class="mini-content">
+      <div class="mini-content">     
           <div class="container" >
-              <!--Mini Box-->
-              <div class="row">
-                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#openModal" class="mini-box">
-                      <strong>TPV</strong>
-                  </a>
-                </div>
-                
-                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#" class="mini-box">
-                    <strong>Autoventa</strong>
-                  </a>
-                </div>
-                <div class="col-lg-4">
-                  
-                </div>
-            
-                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#" class="mini-box">
-                    <strong>FACe</strong>
-                  </a>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#" class="mini-box">
-                    <strong>SII</strong>
-                  </a>
-                </div>
+            <div class="row">
+              <div class="offset-lg-3 col-lg-6">
+                  <div class="info">
+                      <h2>Nuestros productos
+                        <hr style="width:100px; margin: auto; margin-top:2vh;" />
+                  </div>
               </div>
-
+            </div>
+              <!--Mini Box-->
+              
               <div class="row justify-content-center">
                 <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#" class="mini-box">
-                    <strong>Gestión</strong>
+                  <a href="#modalGestion" class="mini-box">
+                    <strong>Gestión Comercial</strong>
                   </a>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#" class="mini-box">
-                    <strong>Contabilidad</strong>
+                  <a href="#modalContabilidad" class="mini-box">
+                    <small>Contabilidad</small>
                   </a>
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#" class="mini-box">
-                      <strong>Taller</strong>
+                  <a href="#modalTPV" class="mini-box">
+                      <small>TPV</small>
                   </a>
                 </div>
                 
                 <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#" class="mini-box">
-                    <strong>Bares</strong>
+                  <a href="#modalAutoventa" class="mini-box">
+                    <small>Autoventa</small>
+                  </a>
+                </div>
+                <div class="col-lg-4">
+                </div>
+            
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                  <a href="#modalFACe" class="mini-box">
+                    <small>FACe</small>
+                  </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                  <a href="#modalSII" class="mini-box">
+                    <small>SII</small>
+                  </a>
+                </div>
+              </div>
+
+              
+              <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                  <a href="#modalTaller" class="mini-box">
+                      <small>Taller</small>
+                  </a>
+                </div>
+                
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                  <a href="#modalBares" class="mini-box">
+                    <small>Bares</small>
                   </a>
                 </div>
                 <div class="col-lg-4">
@@ -244,13 +253,13 @@
                 </div>
             
                 <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#" class="mini-box">
-                    <strong>Maquinas</strong>
+                  <a href="#modalMaquina" class="mini-box">
+                    <strong>Máquinas de Cobro</strong>
                   </a>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#" class="mini-box">
-                    <strong>Control</strong>
+                  <a href="#modalControl" class="mini-box">
+                    <strong>Control Asistencia</strong>
                   </a>
                 </div>
               </div>
@@ -263,49 +272,120 @@
 
   <!--Menu modal-->
 
-  <div id="openModal" class="modalDialog">
+  
+  <div id="modalGestion" class="modalDialog">
     <div>
       <a href="#close" title="Close" class="close">X</a>
-      <h2>TPV</h2>
+      <h2 style="text-align: center;">Gestión comercial</h2>
       <img src="images/team.png" style="width: 100%; height: 100%;">
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
         Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
         nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
-      
     </div>
   </div>
-
-<!-- Modal -->
-        
-
-
-
-
+  <div id="modalContabilidad" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <h2 style="text-align: center;">Contabilidad</h2>
+      <img src="images/team.png" style="width: 100%; height: 100%;">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
+        nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
+    </div>
+  </div>
+  <div id="modalTPV" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <h2 style="text-align: center;">TPV</h2>
+      <img src="images/team.png" style="width: 100%; height: 100%;">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
+        nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
+    </div>
+  </div>
+  <div id="modalAutoventa" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <h2 style="text-align: center;">Autoventa</h2>
+      <img src="images/team.png" style="width: 100%; height: 100%;">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
+        nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
+    </div>
+  </div>
+  <div id="modalFACe" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <h2 style="text-align: center;">FACe</h2>
+      <img src="images/team.png" style="width: 100%; height: 100%;">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
+        nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
+    </div>
+  </div>
+  <div id="modalSII" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <h2 style="text-align: center;">SII</h2>
+      <img src="images/team.png" style="width: 100%; height: 100%;">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
+        nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
+    </div>
+  </div>
+  <div id="modalTaller" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <h2 style="text-align: center;">Taller</h2>
+      <img src="images/team.png" style="width: 100%; height: 100%;">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
+        nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
+    </div>
+  </div>
+  <div id="modalBares" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <h2 style="text-align: center;">Bares</h2>
+      <img src="images/team.png" style="width: 100%; height: 100%;">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
+        nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
+    </div>
+  </div>
+  <div id="modalMaquina" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <h2 style="text-align: center;">Máquinas de cobro</h2>
+      <img src="images/team.png" style="width: 100%; height: 100%;">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
+        nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
+    </div>
+  </div>
+  <div id="modalControl" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <h2 style="text-align: center;">Control Asistencia</h2>
+      <img src="images/team.png" style="width: 100%; height: 100%;">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
+        nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
+    </div>
+  </div>
 
 
   <!--/Menu modal-->
 
     <!--Contactar-->
-
-
     <section id="contacto" class="contact">
-    
-      <!--<div id="vid">
-        <video
-        loop 
-        muted
-        autoplay
-        preload="auto">
-          <source src="images/video/office.mp4" type="video/mp4">
-            Does not support video tag.</video>-->
-        
         <div class="container-fluid">
         <div class="row">
                   <div class="col-lg-6">
                     <div class="info-box my-4">
                       <i class="bx bx-map" style="color:#2c8087"></i>
                       <h3>Dirección</h3>
-                      <p>C/ El Salvador - El Toscal<br>Edif. Nueva Orleans - Local 3</br>38417 Los Realejos</p>
+                      <p style="font-size: 15px; margin-bottom: 3%;">C/ El Salvador - El Toscal &nbsp; Edif. Nueva Orleans - Local 3</br>38417 Los Realejos</p>
                     </div>
                   </div>
         
@@ -314,7 +394,7 @@
                       <i class="bx bx-envelope" style="color:#2c8087"></i>
                       <h3 style="margin-bottom: 8%;">Nuestro email</h3>
                       <a href="mailto:elcorreoquequieres@correo.com" style="text-decoration:none; ">
-                        <p style="font-size: 18px; margin-bottom: 7%; color:cadetblue">info@cticanarias.com<br></p></a>
+                        <p style="margin-bottom: 7%; color:cadetblue">info@cticanarias.com<br></p></a>
                     </div>
                   </div>
         
@@ -323,16 +403,17 @@
                       <i class="bx bx-phone-call" style="color:#2c8087"></i>
                       <h3 style="margin-bottom: 8%;">Número Teléfono</h3>
                       <a href="tel:+34 922 36 50 02" style="text-decoration:none; ">
-                      <p style="font-size: 18px; margin-bottom: 7%; color:cadetblue">+34 922 36 50 02</p></a>
+                      <p style="margin-bottom: 7%; color:cadetblue">+34 922 36 50 02</p></a>
                     </div>
                   </div>
                 </div>
           <div class="row">
             <div class="contact-map my-2">
-              <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14038.965074698013!2d-16.5761309!3d28.3968816!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x61265773f737e3ca!2sC.T.I.%20Canarias!5e0!3m2!1ses!2ses!4v1615472452145!5m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
+              <iframe style="border:0; width: 100%; height: 500px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14038.965074698013!2d-16.5761309!3d28.3968816!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x61265773f737e3ca!2sC.T.I.%20Canarias!5e0!3m2!1ses!2ses!4v1615472452145!5m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="copyright my-0">
-              <h6 style="text-align: center; color: azure; margin-top: 5px;">&copy;Copyright CTI Canarias. All Rights Reserved</h6>
+              <h6 style="text-align: center; color: azure; margin-top: 5px;">&copy;Copyright CTI Canarias. All Rights Reserved. &nbsp;<a href="https://www.vecteezy.com/free-vector/web" style="text-decoration: none; color: #fff">Web Vectors by Vecteezy</a></h6>
+              
             </div>
         </div>
         </div>
