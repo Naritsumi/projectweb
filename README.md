@@ -5,6 +5,7 @@ Testweb - página y diseño actual.
 
 - [x] Eliminar formulario php
 - [x] Actualizar Footer
-- [ ] Generar menú responsive
-- [ ] Re-estructurar formato
+- [x] Generar menú responsive
+- [x] Añadir modals a cada botón
+- [ ] Re-estructurar formato (incluyendo modals)
 - [ ] Certificado SSL
