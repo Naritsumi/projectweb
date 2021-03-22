@@ -7,5 +7,7 @@ Testweb - página y diseño actual.
 - [x] Actualizar Footer
 - [x] Generar menú responsive
 - [x] Añadir modals a cada botón
-- [ ] Re-estructurar formato (incluyendo modals)
+- [x] Añadir políticas de privacidad - aviso legal
+- [ ] Intentar cargar texto desde xml a html
+- [ ] Editar modals del menú (diseño / modals)
 - [ ] Certificado SSL
