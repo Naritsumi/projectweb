@@ -623,10 +623,6 @@ hr.style3 {
     position: relative;
     width: 100%;
     /*margin-top: -1vh; En caso de usar vídeo, activar*/
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     border-left: 0;
     border-right: 0;
     border-top: 0;
@@ -635,6 +631,10 @@ hr.style3 {
 
   }
  
+  .contact .container-fluid{
+    margin-top:2vh;
+  }
+
   .contact .info-box {
     
     margin-top: 2vh;
