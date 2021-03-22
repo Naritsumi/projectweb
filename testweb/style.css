@@ -609,6 +609,7 @@ hr.style3 {
 
   /*--Contacto--*/
   #contacto {
+    
     /*imagen con comillas simples para poder correrlo en servidor*/
     background: url('images/backgroundgris.webp') no-repeat center center fixed;
     -moz-transform: translateX(0px);
@@ -616,6 +617,7 @@ hr.style3 {
     -o-transform: translateX(0px);
     -ms-transform: translateX(0px);
     transform: translateX(0px);
+    
     display: table;
     height: 700px;
     position: relative;
@@ -632,7 +634,7 @@ hr.style3 {
     
 
   }
-
+ 
   .contact .info-box {
     
     margin-top: 2vh;
