@@ -170,20 +170,6 @@ html, body {
     margin: 0px 0px 0px 0px;
     
   }
-  
-  .blur{
-    width: 680px;
-    height: 180px;
-    background-color: rgba(214, 215, 216, 0.027);
-    backdrop-filter: blur(5px);
-    color: rgb(201, 201, 201);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    box-shadow: 8px 0px 16px;
-  }
-
 
   .bler{
     width: 680px;
@@ -195,9 +181,7 @@ html, body {
     /*display: flex;*/
     justify-content: center;
     align-items: center;
-
     position: relative;
-
     /*border-radius: 25px;*/
     display: block;
     margin-left: auto;
@@ -361,15 +345,17 @@ html, body {
 
 #information {
   /*imagen con comillas simples para poder correrlo en servidor*/
-  background: url('images/backgroundgris.png') no-repeat center center fixed;
+  background: url('images/backgroundgris.webp') no-repeat center center fixed;
+  -moz-transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
   display: table;
   height: 600px;
   position: relative;
   width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  
   border-left: 0;
   border-right: 0;
   border-top: 0;
@@ -388,6 +374,7 @@ html, body {
   flex-wrap: wrap;
   z-index: 1;
   margin-top:10vh;
+  margin-bottom:10vh;
   
 }
 
@@ -406,6 +393,7 @@ html, body {
   border-top: 1px solid rgba(255,255,255,0.1);
   border-left: 1px solid rgba(255,255,255,0.1);
   backdrop-filter: blur(5px);
+ 
 
 }
 
@@ -449,6 +437,12 @@ html, body {
   position: relative;
   padding-top: 40px;
   padding-bottom: 90px;
+  border-left: 0;
+  border-top:0;
+  border-right: 0;
+  border-bottom: 5px;
+  border-color: rgb(52, 115, 139);
+  border-style: solid;
 }
 
 .mini:before {
@@ -461,20 +455,17 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url(/images/vector.jpg);
+  background-image: url('images/vector.webp');
   z-index: 2;
   top: -20%;
   left: -20%;
 }
-
-
 
 .mini .mini-content {
   position: relative;
   margin-top:3%; /*margen entre menú y cards*/
   margin-bottom: 2%;
   z-index: 3;
-
 }
 
 .mini .mini-content .mini-box {
@@ -494,6 +485,7 @@ html, body {
   align-items: center;
   border-top: 1px solid rgba(255,255,255,0.1);
   border-left: 1px solid rgba(255,255,255,0.1);
+  
 }
 
 
@@ -517,6 +509,7 @@ html, body {
   margin: auto;
   border-radius: 50px;
 }
+
 
 .mini .mini-content .mini-box strong {
   
@@ -588,17 +581,17 @@ hr.style3 {
 	background: -webkit-linear-gradient(#fff, rgb(255, 255, 255));
 	background: -o-linear-gradient(#fff, rgb(255, 255, 255));
   -webkit-transition: opacity 400ms ease-in;
--moz-transition: opacity 400ms ease-in;
-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
 }
 .close {
 	background: #606061;
 	color: #FFFFFF;
 	line-height: 25px;
 	position: absolute;
-	right: -12px;
+	right: 0px;
 	text-align: center;
-	top: -10px;
+	top: 0px;
 	width: 24px;
 	text-decoration: none;
 	font-weight: bold;
@@ -609,6 +602,7 @@ transition: opacity 400ms ease-in;
 	-webkit-box-shadow: 1px 1px 3px #000;
 	box-shadow: 1px 1px 3px #000;
 }
+
 .close:hover { background: #00d9ff; }
 
 /*--Menu Modal--*/
@@ -616,7 +610,12 @@ transition: opacity 400ms ease-in;
   /*--Contacto--*/
   #contacto {
     /*imagen con comillas simples para poder correrlo en servidor*/
-    background: url('images/backgroundgris.png') no-repeat center center fixed;
+    background: url('images/backgroundgris.webp') no-repeat center center fixed;
+    -moz-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
     display: table;
     height: 700px;
     position: relative;
