@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="style.css">
   <!-- Vendor CSS Files para el Footer -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -17,12 +16,12 @@
 </head>
 
 <body>
-
-
+  <header>
   <!-- Preloader -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
    <div class="loader-page"></div>
   <!-- /Preloader -->
+  </header>
 
     <!--Navegador superior-->
     <section id=navbar>
@@ -80,9 +79,8 @@
           <!-- Slide 1 -->
           <div class="carousel-item active" style="background-image: url('images/slide/slide-1.webp');">
             <div class="carousel-container text-center">
-              <div class="bler">
+              <div class="blur">
                 <h2 class="animate__animated animate__fadeInDown">Aplicaciones estándar y módulos a medida</h2>
-                <a href="#menu" class="btn btn-primary animate__animated animate__fadeInUp scrollto">Productos</a>
               </div>
             </div>
           </div>
@@ -90,20 +88,17 @@
           <!-- Slide 2 -->
           <div class="carousel-item" style="background-image: url('images/slide/slide-2.webp');">
             <div class="carousel-container text-center">
-              <div class="bler">
+              <div class="blur">
                 <h2 class="animate__animated animate__fadeInDown">Instalación de redes y hardware</h2>
-                <a href="#menu" class="btn btn-primary animate__animated animate__fadeInUp scrollto">Productos</a>
               </div>
-             
             </div>
           </div>
 
           <!-- Slide 3 -->
           <div class="carousel-item" style="background-image: url('images/slide/slide-3.webp');">
             <div class="carousel-container text-center">
-              <div class="bler">
+              <div class="blur">
                 <h2 class="animate__animated animate__fadeInDown">Asistencia telefónica y presencial</h2>
-                <a href="#contacto" class="btn btn-primary animate__animated animate__fadeInUp scrollto">Contáctanos</a>
             </div>
           </div>
           </div>
@@ -124,10 +119,19 @@
 
     
   <!-- información empresa (cards)-->
+  <script type="text/javascript" src="card.js"></script> 
   <div id="information" class="pad-section">
-    <div class="container">
-          <div class="card">
-            <!--panel 1-->
+    <div class="row ">
+      <div class="offset-lg-3 col-lg-6">
+          <div class="card-info">
+              <h2>¿Qué ofrecemos?</h2>
+                <hr style="width:100px; margin: auto; margin-top:2vh;" />
+          </div>
+      </div>
+    </div>
+        <div class="container">
+          <!--panel 1-->
+          <div id="card1" class="card">
             <div class="content">
               <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
               <lord-icon
@@ -137,12 +141,10 @@
                   style="width:128px;height:128px">
               </lord-icon>
               <h3>Gestión Comercial</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur.</p>
-
             </div>
           </div>
           <!--panel 2-->
-          <div class="card">
+          <div id="card2" class="card">
             <div class="content">
               <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
                 <lord-icon
@@ -152,13 +154,11 @@
                     style="width:128px;height:128px">
                 </lord-icon>
               <h3>Gestión TPV</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur.</p>
-
             </div>
           </div>
           <!--panel 3-->
           <div class="card">
-            <div class="content">
+            <div id="card2" class="content">
               <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
                 <lord-icon
                     src="https://cdn.lordicon.com//jqeuwnmb.json"
@@ -167,8 +167,6 @@
                     style="width:128px;height:128px">
                 </lord-icon>
               <h3>Autoventa</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur.</p>
-
             </div>
           </div>
 
@@ -195,12 +193,12 @@
               
               <div class="row justify-content-center">
                 <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#modalGestion" class="mini-box">
+                  <a href="" class="mini-box" data-toggle="modal" data-target="#modalGestion">
                     <strong>Gestión Comercial</strong>
                   </a>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#modalContabilidad" class="mini-box">
+                  <a href="" class="mini-box" data-toggle="modal" data-target="#modalContabilidad">
                     <small>Contabilidad</small>
                   </a>
                 </div>
@@ -208,13 +206,13 @@
 
               <div class="row">
                 <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#modalTPV" class="mini-box">
+                  <a href="" class="mini-box" data-toggle="modal" data-target="#modalTPV">
                       <small>TPV</small>
                   </a>
                 </div>
                 
                 <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#modalAutoventa" class="mini-box">
+                  <a href="" class="mini-box" data-toggle="modal" data-target="#modalAutoventa">
                     <small>Autoventa</small>
                   </a>
                 </div>
@@ -222,27 +220,26 @@
                 </div>
             
                 <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#modalFACe" class="mini-box">
+                  <a href="" class="mini-box" data-toggle="modal" data-target="#modalFACe">
                     <small>FACe</small>
                   </a>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#modalSII" class="mini-box">
+                  <a href="" class="mini-box" data-toggle="modal" data-target="#modalSII">
                     <small>SII</small>
                   </a>
                 </div>
               </div>
-
-              
+            
               <div class="row">
                 <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#modalTaller" class="mini-box">
+                  <a href="" class="mini-box" data-toggle="modal" data-target="#modalTaller">
                       <small>Taller</small>
                   </a>
                 </div>
                 
                 <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#modalBares" class="mini-box">
+                  <a href="" class="mini-box" data-toggle="modal" data-target="#modalBares">
                     <small>Bares</small>
                   </a>
                 </div>
@@ -251,12 +248,12 @@
                 </div>
             
                 <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#modalMaquina" class="mini-box">
+                  <a href="" class="mini-box" data-toggle="modal" data-target="#modalMaquina">
                     <strong>Máquinas de Cobro</strong>
                   </a>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="#modalControl" class="mini-box">
+                  <a href="" class="mini-box" data-toggle="modal" data-target="#modalControl">
                     <strong>Control Asistencia</strong>
                   </a>
                 </div>
@@ -270,107 +267,224 @@
 
   <!--Menu modal-->
 
-  
-  <div id="modalGestion" class="modalDialog">
-    <div>
-      <a href="#close" title="Close" class="close">X</a>
-      <h2 style="text-align: center;">Gestión comercial</h2>
-      <img src="" style="width: 100%; height: 100%;">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-        Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
-        nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
+<!-- Modal -->
+<section>
+    <div class="modal fade" id="modalGestion" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center d-block">
+                <h5 class="modal-title text-center d-block">Gestión Comercial</h5>
+          </div>
+          <div class="modal-body" id="gestionid">
+            <div class="row justify-content-md-center">
+            <object data="gestioncomercial.txt" width="500" height="100" >
+              Text not supported
+            </object>
+
+          </div>
+              <div class="container-fluid">
+                <div class="row justify-content-md-center">
+                    <img src="images/prueba.jpg">
+                </div>
+              </div>
+            <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div id="modalContabilidad" class="modalDialog">
-    <div>
-      <a href="#close" title="Close" class="close">X</a>
-      <h2 style="text-align: center;">Contabilidad</h2>
-      <img src="" style="width: 100%; height: 100%;">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-        Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
-        nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
+
+    <div class="modal fade" id="modalContabilidad" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center d-block">
+                <h5 class="modal-title text-center d-block">Contabilidad</h5>
+          </div>
+          <div class="modal-body">
+              Este software se ha convertido en una herramienta indispensable para gestionar cualquier tipo de empresa. 
+              Cuenta con la capacidad de agilizar y dinamizar la productividad de su negocio.<br><br>
+              <div class="container-fluid">
+                <div class="row justify-content-md-center">
+                    <img src="images/prueba.jpg">
+                </div>
+              </div>
+            <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div id="modalTPV" class="modalDialog">
-    <div>
-      <a href="#close" title="Close" class="close">X</a>
-      <h2 style="text-align: center;">TPV</h2>
-      <img src="" style="width: 100%; height: 100%;">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-        Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
-        nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
+    <div class="modal fade" id="modalTPV" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center d-block">
+                <h5 class="modal-title text-center d-block">TPV</h5>
+          </div>
+          <div class="modal-body">
+              Este software se ha convertido en una herramienta indispensable para gestionar cualquier tipo de empresa. 
+              Cuenta con la capacidad de agilizar y dinamizar la productividad de su negocio.<br><br>
+              <div class="container-fluid">
+                <div class="row justify-content-md-center">
+                    <img src="images/prueba.jpg">
+                </div>
+              </div>
+            <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div id="modalAutoventa" class="modalDialog">
-    <div>
-      <a href="#close" title="Close" class="close">X</a>
-      <h2 style="text-align: center;">Autoventa</h2>
-      <img src="" style="width: 100%; height: 100%;">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-        Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
-        nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
+    <div class="modal fade" id="modalAutoventa" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center d-block">
+                <h5 class="modal-title text-center d-block">Autoventa</h5>
+          </div>
+          <div class="modal-body">
+              Este software se ha convertido en una herramienta indispensable para gestionar cualquier tipo de empresa. 
+              Cuenta con la capacidad de agilizar y dinamizar la productividad de su negocio.<br><br>
+              <div class="container-fluid">
+                <div class="row justify-content-md-center">
+                    <img src="images/prueba.jpg">
+                </div>
+              </div>
+            <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div id="modalFACe" class="modalDialog">
-    <div>
-      <a href="#close" title="Close" class="close">X</a>
-      <h2 style="text-align: center;">FACe</h2>
-      <img src="" style="width: 100%; height: 100%;">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-        Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
-        nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
+    <div class="modal fade" id="modalFACe" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center d-block">
+                <h5 class="modal-title text-center d-block">FACe</h5>
+          </div>
+          <div class="modal-body">
+              Este software se ha convertido en una herramienta indispensable para gestionar cualquier tipo de empresa. 
+              Cuenta con la capacidad de agilizar y dinamizar la productividad de su negocio.<br><br>
+              <div class="container-fluid">
+                <div class="row justify-content-md-center">
+                    <img src="images/prueba.jpg">
+                </div>
+              </div>
+            <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div id="modalSII" class="modalDialog">
-    <div>
-      <a href="#close" title="Close" class="close">X</a>
-      <h2 style="text-align: center;">SII</h2>
-      <img src="" style="width: 100%; height: 100%;">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-        Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
-        nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
+    <div class="modal fade" id="modalSII" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center d-block">
+                <h5 class="modal-title text-center d-block">SII</h5>
+          </div>
+          <div class="modal-body">
+              Este software se ha convertido en una herramienta indispensable para gestionar cualquier tipo de empresa. 
+              Cuenta con la capacidad de agilizar y dinamizar la productividad de su negocio.<br><br>
+              <div class="container-fluid">
+                <div class="row justify-content-md-center">
+                    <img src="images/prueba.jpg">
+                </div>
+              </div>
+            <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div id="modalTaller" class="modalDialog">
-    <div>
-      <a href="#close" title="Close" class="close">X</a>
-      <h2 style="text-align: center;">Taller</h2>
-      <img src="" style="width: 100%; height: 100%;">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-        Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
-        nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
+    <div class="modal fade" id="modalTaller" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center d-block">
+                <h5 class="modal-title text-center d-block">Taller</h5>
+          </div>
+          <div class="modal-body">
+              Este software se ha convertido en una herramienta indispensable para gestionar cualquier tipo de empresa. 
+              Cuenta con la capacidad de agilizar y dinamizar la productividad de su negocio.<br><br>
+              <div class="container-fluid">
+                <div class="row justify-content-md-center">
+                    <img src="images/prueba.jpg">
+                </div>
+              </div>
+            <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div id="modalBares" class="modalDialog">
-    <div>
-      <a href="#close" title="Close" class="close">X</a>
-      <h2 style="text-align: center;">Bares</h2>
-      <img src="" style="width: 100%; height: 100%;">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-        Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
-        nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
+    <div class="modal fade" id="modalBares" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center d-block">
+                <h5 class="modal-title text-center d-block">Bares y Restaurantes</h5>
+          </div>
+          <div class="modal-body">
+              Este software se ha convertido en una herramienta indispensable para gestionar cualquier tipo de empresa. 
+              Cuenta con la capacidad de agilizar y dinamizar la productividad de su negocio.<br><br>
+              <div class="container-fluid">
+                <div class="row justify-content-md-center">
+                    <img src="images/prueba.jpg">
+                </div>
+              </div>
+            <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div id="modalMaquina" class="modalDialog">
-    <div>
-      <a href="#close" title="Close" class="close">X</a>
-      <h2 style="text-align: center;">Máquinas de cobro</h2>
-      <img src="" style="width: 100%; height: 100%;">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-        Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
-        nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
+    <div class="modal fade" id="modalMaquina" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center d-block">
+                <h5 class="modal-title text-center d-block">Máquinas de cobro</h5>
+          </div>
+          <div class="modal-body">
+              Este software se ha convertido en una herramienta indispensable para gestionar cualquier tipo de empresa. 
+              Cuenta con la capacidad de agilizar y dinamizar la productividad de su negocio.<br><br>
+              <div class="container-fluid">
+                <div class="row justify-content-md-center">
+                    <img src="images/prueba.jpg">
+                </div>
+              </div>
+            <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div id="modalControl" class="modalDialog">
-    <div>
-      <a href="#close" title="Close" class="close">X</a>
-      <h2 style="text-align: center;">Control Asistencia</h2>
-      <img src="" style="width: 100%; height: 100%;">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-        Nobis illo tempore iure esse accusamus saepe voluptas totam quidem enim quo, 
-        nam illum voluptate, reprehenderit ab. Impedit praesentium necessitatibus molestias sapiente.</p>
+    <div class="modal fade" id="modalControl" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center d-block">
+                <h5 class="modal-title text-center d-block">Control de Asistencia</h5>
+          </div>
+          <div class="modal-body">
+              Este software se ha convertido en una herramienta indispensable para gestionar cualquier tipo de empresa. 
+              Cuenta con la capacidad de agilizar y dinamizar la productividad de su negocio.<br><br>
+              <div class="container-fluid">
+                <div class="row justify-content-md-center">
+                    <img src="images/prueba.jpg">
+                </div>
+              </div>
+            <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+</section>
   <!--MODAL POLITICAS PRIVACIDAD-->
   <section>
   <div class="modal fade" id="politicas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -615,11 +729,11 @@
    
 
     <!--Librerías Query-->
-    <script scr="/js/app.js"></script>
-    <script type="text/javascript" src="main.js"></script>  
+    <script scr="assets/js/parallax/app.js"></script>
+    <script type="text/javascript" src="main.js"></script> 
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <script src="/js/parallax.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

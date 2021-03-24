@@ -171,7 +171,7 @@ html, body {
     
   }
 
-  .bler{
+  .blur{
     width: 680px;
     height: 180px;
     /*background-color: rgba(214, 215, 216, 0.027);*/
@@ -222,17 +222,6 @@ html, body {
     margin-right: auto;
     font-size: 45px;
     font-weight: 900;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
-  
-  #hero p {
-    font-family: Arial, sans-serif;
-    width: 80%;
-    margin-left: 25px;
-    margin-right: 60%;
-    -webkit-animation-delay: 0.4s;
-    animation-delay: 0.4s;
-    color:#fff;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
   
@@ -293,32 +282,7 @@ html, body {
   #hero .carousel-indicators li {
     cursor: pointer;
   }
-  
-  #hero .btn-primary {
 
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 1px;
-
-
-    /*Ajustes visuales botón*/
-    padding: 12px 32px;
-    border-radius: 5px;
-    transition: 0.5s;
-    line-height: 1;
-    color: #fff;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
-    border: 0; 
-    background: #3b8c94;
-
-    margin-top: 5%;
-  }
-  
-  #hero .btn-start:hover {
-    background: #7ab4b8;
-   
-  }
   
   @media (max-width: 768px) {
     #hero h2 {
@@ -364,6 +328,17 @@ html, body {
     border-style: solid;
 }
 
+.card-info{
+  margin-top: 0px;
+  margin-bottom: 5vh;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+  cursor: pointer;
+}
 
 .pad-section .container{
   position: relative;
@@ -373,7 +348,7 @@ html, body {
   max-width: 1200px;
   flex-wrap: wrap;
   z-index: 1;
-  margin-top:10vh;
+  
   margin-bottom:10vh;
   
 }
@@ -381,7 +356,7 @@ html, body {
 .pad-section .container .card{
   position: relative;
   width: 280px;
-  height:400px;
+  height:350px;
   margin:30px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
@@ -397,19 +372,25 @@ html, body {
 
 }
 
+.pad-section .container .card:hover{
+  box-shadow: 0px 0px 30px rgba(0,0,0, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+}
+
 .pad-section .container .card .content{
   padding: 20px;
   text-align:center;
   transition: 0.5s;
-
+  
 }
 
-.pad-section .container .card .content h2{
-  position: absolute;  
-  top: -30px;
-  right: 30px;
-  font-size: 8em;
-  color: rgba(255,255,255,0.5);
+.pad-section h2{
+  margin-top: 5vh;
+  color: rgba(252, 252, 252, 0.842);
   pointer-events:none;
 }
 
@@ -417,12 +398,6 @@ html, body {
   font-size: 1.8em;
   color:#fff;
   z-index: 1;
-}
-
-.container .card .content p{
-  font-size: 1em;
-  color:#fff;
-  font-weight: 300;
 }
 
 
@@ -540,70 +515,11 @@ html, body {
   text-align: center;
 }
 
-hr.style3 {
-	border-top: 1px dashed #8c8b8b;
-  width:100px; 
-  margin: auto;
-}
 
 
 /*--/Menu--*/
 
 /*--Menu modal--*/
-
-.modalDialog {
-	position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-}
-.modalDialog:target {
-	opacity:1;
-	pointer-events: auto;
-}
-.modalDialog > div {
-	width: 400px;
-	position: relative;
-	margin: 10% auto;
-	padding: 15px 20px 13px 20px;
-	border-radius: 10px;
-	background: #fff;
-	background: -moz-linear-gradient(#fff, rgb(255, 255, 255));
-	background: -webkit-linear-gradient(#fff, rgb(255, 255, 255));
-	background: -o-linear-gradient(#fff, rgb(255, 255, 255));
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-}
-.close {
-	background: #606061;
-	color: #FFFFFF;
-	line-height: 25px;
-	position: absolute;
-	right: 0px;
-	text-align: center;
-	top: 0px;
-	width: 24px;
-	text-decoration: none;
-	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
-}
-
-.close:hover { background: #00d9ff; }
 
 /*--Menu Modal--*/
 
