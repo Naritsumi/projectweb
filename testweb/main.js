@@ -1,7 +1,6 @@
-$(window).on('load', function () {
+$(window).ready(function () {
   setTimeout(function () {
-$(".loader-page").css({visibility:"hidden",opacity:"0"})
-}, 1000);
+    $(".loader-page").css({visibility:"hidden",opacity:"0"})
+    }, 1000);
 });
-
 
