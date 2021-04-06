@@ -20,7 +20,7 @@
 <body>
   <header>
   <!-- Preloader -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
    <div class="loader-page"></div>
   <!-- /Preloader -->
   </header>
@@ -187,12 +187,12 @@
               
               <div class="row justify-content-center">
                 <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="" class="mini-box" data-toggle="modal" data-target="#">
+                  <a href="" class="mini-box" data-toggle="modal" data-target="#modalGestion">
                     <strong>Gestión Comercial</strong>
                   </a>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                  <a href="" class="mini-box" data-toggle="modal" data-target="#">
+                  <a href="" class="mini-box" data-toggle="modal" data-target="#modalContabilidad">
                     <small>Contabilidad</small>
                   </a>
                 </div>
@@ -261,7 +261,7 @@
 
 <!--Menu modal-->
 
-    <!-- Modal -->
+    <!-- <p id="demo"></p> -->
       <section>
           <div class="modal fade" id="modalGestion" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
@@ -271,13 +271,13 @@
                 </div>
                 <div class="modal-body" id="gestionid">
                   <div class="row justify-content-md-center">
-                  <object data="gestioncomercial.txt" width="300" height="70">
-                    Not supported
-                  </object>
+                   
+                    <p id="gestioncom"></p>
+
                 </div>
                     <div class="container-fluid">
                       <div class="row justify-content-md-center">
-                          <img src="images/prueba.jpg">
+                          <img src="">
                       </div>
                     </div>
                   <div class="modal-footer">
@@ -295,12 +295,11 @@
                       <h5 class="modal-title text-center d-block">Contabilidad</h5>
                 </div>
                 <div class="modal-body">
-                  La aplicación contable de CTI Canarias, esta indicada, para llevar la administración de pequeñas y medianas empresas. 
-                  La estrecha unión que existe con nuestra gestión comercial permite la contabilización automatizada de compras, ventas.
+                  <p id="contab"></p>
                   <br><br>
                     <div class="container-fluid">
                       <div class="row justify-content-md-center">
-                          <img src="images/prueba.jpg">
+                          <img src="">
                       </div>
                     </div>
                   <div class="modal-footer">
@@ -310,6 +309,7 @@
               </div>
             </div>
           </div>
+
           <div class="modal fade" id="modalTPV" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
               <div class="modal-content">
@@ -730,30 +730,75 @@
    
 
     <!--Scripts-->
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
-    <script type="text/javascript">
-      VanillaTilt.init(document.querySelector(".card"), {
-        max: 25,
-        speed: 400
-      });
-      
-      //It also supports NodeList
-      VanillaTilt.init(document.querySelectorAll(".card"));
-    </script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000,
-      });
-    </script>
+      <!--Animaciones-->
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script>
+            AOS.init({
+              duration: 1000,
+            });
+          </script>
 
-    <!--Librerías js-->
-    
+      <!--Animación tarjeta en movimiento-->
+          <script type="text/javascript" src="vanilla-tilt.js"></script>
+              <script type="text/javascript">
+                VanillaTilt.init(document.querySelector(".card"), {
+                  max: 25,
+                  speed: 400
+                });
+            
+            //It also supports NodeList
+            VanillaTilt.init(document.querySelectorAll(".card"));
+          </script>
+
+       <!-- Script Productos-->
+        <script type="text/javascript">
+
+         //SCRIPT GESTIÓN COMERCIAL
+        const xhr1 = new XMLHttpRequest();
+        xhr1.onreadystatechange = function (){
+          if (xhr1.readyState==4){
+            if (xhr1.status==200){
+              document.getElementById('gestioncom').textContent = xhr1.responseText;
+            } 
+         
+          if (xhr1.status == 404){
+            console.log('Documento no encontrado');
+          }
+         }  
+        
+        };
+        
+        xhr1.open('get','gestioncomercial.txt',true);
+        xhr1.send();
+
+        //SCRIPT CONTABILIDAD
+        const xhr2 = new XMLHttpRequest();
+          xhr2.onreadystatechange = function (){
+            if (xhr2.readyState==4){
+              if (xhr2.status==200){
+                document.getElementById('contab').textContent = xhr2.responseText;
+              } 
+          
+            if (xhr2.status == 404){
+              console.log('Documento no encontrado');
+            }
+          }  
+          
+          };
+          
+          xhr2.open('get','contabilidad.txt',true);
+          xhr2.send();
+
+          //SCRIPT 
+        
+        </script>
+
+
+
+    <!--Librerías js-->    
     <script type="text/javascript" src="main.js"></script>  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>

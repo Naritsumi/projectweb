@@ -4,3 +4,7 @@ $(window).ready(function () {
     }, 1000);
 });
 
+
+/*$(document).ready(function() {
+  $("#demo").html("texto prueba aa");
+});*/
