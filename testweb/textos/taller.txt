@@ -1,0 +1,3 @@
+El módulo de talleres engloba todas las necesidades administrativas, desde la recepción del vehículo hasta la 
+entrega del mismo. Podrá comprobar estadísticas finales de beneficios por orden de reparación y por cliente. 
+Es una herramienta ágil, potente y muy intuitiva, su facilidad de uso la diferencia de productos similares.

@@ -1,0 +1,3 @@
+Una aplicación de gestión comercial sencilla y accesible permite manejar mejor y más rápido los datos de los clientes, 
+así como optimizar el seguimiento de los equipos comerciales, 
+y sobre todo los informes de éstos para ver la situación de tu empresa en tiempo real.
