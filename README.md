@@ -8,6 +8,9 @@ Testweb - página y diseño actual.
 - [x] Generar menú responsive
 - [x] Añadir modals a cada botón
 - [x] Añadir políticas de privacidad - aviso legal
-- [ ] Intentar cargar texto desde xml a html
-- [ ] Editar modals del menú (diseño / modals)
+- [x] Intentar cargar texto desde ~~xml~~ txt a html
+- [x] Editar modals del menú (diseño / modals)
+- [ ] Ordenar y limpiar código
 - [ ] Certificado SSL
+
+Al terminar los pasos anteriores se creará y conectará la base de datos :shipit:
