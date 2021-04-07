@@ -480,13 +480,29 @@ hr.style3 {
   margin: auto;
 }
 
-
 /*--/Menu--*/
 
-/*--Menu modal--*/
 
+/*--Modal--*/
 
-/*--Menu Modal--*/
+#modal-button{
+  background-color:#2c8087;
+}
+
+.modal-header{
+  background-color:#2c8087;
+}
+
+.modal-title{
+  color:rgb(255, 255, 255);
+}
+
+p{
+  white-space: pre-wrap;
+}
+
+/*--/Modal--*/
+
 
   /*--Contacto--*/
   #contacto {
