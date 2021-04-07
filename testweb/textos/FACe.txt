@@ -1,2 +1,9 @@
-Este software se ha convertido en una herramienta indispensable para gestionar cualquier tipo de empresa. 
-Cuenta con la capacidad de agilizar y dinamizar la productividad de su negocio.
+FACe es el punto general de entrada de facturas electrónicas de la Administración General del Estado. A través de FACe las empresas presentarán sus facturas electrónicas obligatoriamente a partir del 15 de Enero de 2015, siendo voluntario antes de dicha fecha.
+
+La Administración General del Estado ofrece a sus proveedores de un único punto de presentación de facturas con todas las ventajas que ello conlleva – ventanilla única de presentación y consulta, formato unificado, codificación unificada de unidades, etc.
+
+Además FACe puede ser utilizado por otras administraciones públicas como su propio punto general de entrada de facturas electrónicas lo que incide en los beneficios para los proveedores de las administraciones.
+
+CTI Canarias ofrece una aplicación para presentar la factura electrónica y permite a los proveedores si lo desean conectar sus sistemas de facturación con FACe de manera automática.
+
+Además el sistema está integrado con el cliente de generación de facturas del Ministerio de Industria, Energía y Turismo y con otros sistemas del sector privado lo que permite un envío cómodo y sencillo de sus facturas electrónicas.

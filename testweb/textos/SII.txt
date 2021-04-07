@@ -1,2 +1,12 @@
-Este software se ha convertido en una herramienta indispensable para gestionar cualquier tipo de empresa. 
-Cuenta con la capacidad de agilizar y dinamizar la productividad de su negocio.
+El 1 de enero de 2019 entró en vigor el nuevo sistema de llevanza de libros registro del IGIC basado en el Suministro Inmediato de Información (SII), mediante el cual, los empresarios y profesionales podrán enviar el detalle de sus registros de facturación de forma inmediata a través de la Sede electrónica de la Agencia Tributaria Canaria, siendo obligatorio para aquellos que tengan un periodo de liquidación mensual.
+
+Dicha obligatoriedad viene recogida en el artículo 49.5 del Reglamento de gestión de los tributos derivados del Régimen Económico y Fiscal de Canarias según redacción dada por el Decreto 111/2018, de 30 de julio, que modifica el Decreto 268/2011, de 4 de agosto, por el que se aprueba el citado Reglamento.
+
+Ventajas:
+- Fiabilidad: Registro contable sin errores.
+- Seguridad: Mayor control en las transacciones con la Agencia Tributaria Canaria.
+- Eficiencia: Mejora de los procesos de gestión de la empresa.
+- Rapidez: Declaración del impuesto en tiempo cuasi inmediato.
+- Tranquilidad: Reducción de la incertidumbre ya que se puede conocer el estado de los libros contables en tiempo real.
+- Simplificación de las obligaciones formales: se elimina la obligación de presentar los modelos informativos y de llevar internamente los Libros de impuestos.
+- Obtención de información de contraste: la información nace cruzada si cliente y proveedor están acogidos al sistema.
