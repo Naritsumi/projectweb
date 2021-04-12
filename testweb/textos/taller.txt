@@ -1,3 +1,11 @@
-El módulo de talleres engloba todas las necesidades administrativas, desde la recepción del vehículo hasta la 
-entrega del mismo. Podrá comprobar estadísticas finales de beneficios por orden de reparación y por cliente. 
-Es una herramienta ágil, potente y muy intuitiva, su facilidad de uso la diferencia de productos similares.
+﻿El módulo para talleres de CTI Canarias incluye funciones habitualmente utilizadas por pequeñas y medianas empresas (PYMES). Es una herramienta completa de gestión con la cual el profesional puede controlar el flujo de ventas, desde el presupuesto hasta la factura, generando los correspondientes y obligatorios resguardos de depósito, almacenando los trabajos realizados en el historial del vehículo y controlando los periodos de mantenimiento.
+
+Ventajas:
+- Venta de repuestos y administración de inventario.
+- Elaboración de presupuestos y prestación de servicios.
+- Seguimiento de vehículos e historial.
+- Facturación.
+- Punto de venta (TPV).
+- Aparte de los talleres de reparación de automóviles, este tipo de software también es utilizado por talleres de motocicletas, 
+  pequeños talleres de reparación de motores, talleres de barcos, etc.
+- Y mucho más.

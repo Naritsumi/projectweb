@@ -1,1 +1,12 @@
-Con la aplicación para preventa y autoventa De CTI Canarias, sus comerciales dispondrán de una herramienta completa con la que agilizar sus ventas desde cualquier dispositivo móvil Android (smartphone, tablet o terminal portátil). Tramite desde cualquiera de estos dispositivos toda la gestión de ventas y el control comercial de sus pedidos. Con nuestro software de movilidad su red de comerciales accederá a históricos de ventas, gestionará la trazabilidad alimentaria de los productos y podrá generar las liquidaciones de su día de ventas, entre otras funcionalidades.
+﻿Con la aplicación para preventa y autoventa De CTI Canarias, sus comerciales dispondrán de una herramienta completa con la que agilizar sus ventas desde cualquier dispositivo móvil Android (smartphone, tablet o terminal portátil). 
+
+Tramite desde cualquiera de estos dispositivos toda la gestión de ventas y el control comercial de sus pedidos. Con nuestro software de movilidad su red de comerciales accederá a históricos de ventas, gestionará la trazabilidad alimentaria de los productos y podrá generar las liquidaciones de su día de ventas.
+
+Entre otras funcionalidades podrá encontrar:
+
+- Emisión de Facturas, Albaranes, Presupuestos, Pedidos.
+- Envio de documentos a central.
+- Actualización de productos y clientes desde central.
+- Impresión inalámbrica.
+- Impresión a PDF.
+- Y mucho más.

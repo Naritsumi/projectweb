@@ -1,7 +1,8 @@
-Aumenta la productividad con nuestro software de control de presencia a la medida de tu empresa. Revisa diariamente las horas trabajadas de tus empleados, genera informes de horas y aumenta la productividad.
+﻿Aumenta la productividad con nuestro software de control de presencia a la medida de tu empresa. Revisa diariamente las horas trabajadas de tus empleados, genera informes de horas y aumenta la productividad.
 
 Ventajas:
 - Especifica la jornada de tus empleados y compara sus horas trabajadas con las horas previstas.
 - Revisa que trabajadores están cumpliendo con su jornada laboral.
 - Refleja las ausencias de tus empleados.
 - Selecciona el sistema de fichaje de cada empleado (huella digital, tarjeta, usuario y contraseña).
+- Y mucho más.

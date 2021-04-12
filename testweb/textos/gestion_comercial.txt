@@ -1,3 +1,18 @@
-Una aplicación de gestión comercial sencilla y accesible permite manejar mejor y más rápido los datos de los clientes, 
-así como optimizar el seguimiento de los equipos comerciales, 
-y sobre todo los informes de éstos para ver la situación de tu empresa en tiempo real.
+﻿Toda empresa del sector del comercio precisa de un programa que simplifique su trabajo frente al cliente, precisa que el proceso de venta sea lo mas agil y sencillo posible y que además pueda contar con un control interno que le permita despreocuparse del Stock, de la gestión diaria de la caja, del control del pendiente y de todas aquellas tareas que suponen un necesario control de la administración de la empresa.
+
+En este sentido C.T.I. Canarias ofrece un producto de Gestión Comercial que le soluciona todos estos procesos diarios, y que facilita enormemente la laboriosa tarea administrativa y agiliza considerablemente la venta con el cliente.
+
+Algunas de las carácteristicas de nuestro producto son:
+
+- Multiempresa Posibilidad de gestionar la facturación de varias empresas.
+- Multialmacen Control de 1 o multiples almacenes, bien sea para estocaje o para sucursales
+- Gestión de pedidos a proveedores
+- Amplia control de las órdenes de Compras
+- Gestion de pedidos de clientes
+- Gestion de ventas
+- Control de caja
+- Control de pendientes
+- Integración con dispositivos de preventa/autoventa
+- Emision de Talones/Pagares
+- Disponibilidad de Monousuario / Multiusuario
+- Amplio abanico de informes

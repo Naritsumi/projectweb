@@ -1,2 +1,13 @@
-La aplicación para bares y restaurantes de CTI Canarias es la herramienta rápida y sencilla que le agilizará de 
-manera eficaz el trabajo en su restaurante, bar, cafetería, pub o discoteca.
+El módulo de gestión integral de CTI Canarias para bares y restaurantes le permite a los responsables y empleados de bares, 
+restaurantes, cafeterías y hoteles gestionar su actividad diaria ahorrando costes y tiempo. 
+
+Caracteristicas:
+
+- 60 mesas.
+- 6 salas.
+- Control de stock.
+- Comanderos.
+- Impresión de comandas en diferentes impresoras (barra y cocina, cocina2).
+- Cobro parcial.
+- Cambios de Mesa
+- Y mucho más.

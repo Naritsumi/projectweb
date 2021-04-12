@@ -1,2 +1,16 @@
-La aplicación contable de CTI Canarias, esta indicada, para llevar la administración de pequeñas y medianas empresas. 
-La estrecha unión que existe con nuestra gestión comercial permite la contabilización automatizada de compras, ventas.
+﻿Poder contar en su negocio con la posibilidad de llevar su propia contabilidad le permite tener un mayor control de su empresa. C.T.I. Canarias le ofrece la aplicación de Gestión Contable de gran facilidad para su puesta en marcha y que gestiona todo el ambito contable que pueda necesitar.
+
+Podrá disponer de un producto que se caracteriza por permitir: 
+
+- Multiempresa, podrá llevar contabilidades de varias empresas de forma independiente
+- Control de Efectos a Pagar
+- Control de Efectos a cobrar
+- Balance piramidal
+- Control de 347/415
+- Informe de Perdidas y Ganacias
+- Balance de Situación
+- Comparativa de Mayores con ejercicios anteriores
+- etc.
+
+Este aplicativo también se puede anexar a la Gestión comercial para poder realizar asientos automatizadas de Compras, Ventas y 
+Cajas. 
